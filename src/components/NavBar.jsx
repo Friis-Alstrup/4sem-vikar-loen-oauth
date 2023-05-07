@@ -1,9 +1,10 @@
 import { Container, Nav, NavDropdown, Navbar } from "react-bootstrap";
 import { ClockFill } from "react-bootstrap-icons";
 import { Link, useNavigate } from "react-router-dom";
+import { useUserStore } from "../Hooks/UseUserStore";
 
 export default function NavBar() {
-
+  const user = useUserStore(state => state.user);
   const navigate = useNavigate();
 
   const logout = () => {
@@ -26,7 +27,7 @@ export default function NavBar() {
             <Nav.Link as={Link} to="/vagter">
               Vagter
             </Nav.Link>
-            <NavDropdown title="Min profil" id="basic-nav-dropdown">
+            <NavDropdown title={user ? user.name : "loading..."} id="basic-nav-dropdown">
               <NavDropdown.Item as={Link} to="/løn-og-tillæg">Løn og tillæg</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/kalender-sync">Kalender sync</NavDropdown.Item>
               <NavDropdown.Divider />

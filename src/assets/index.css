@@ -34,6 +34,12 @@ table {
     color: var(--grey-text-color);
 }
 
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 /* =========== NAVBAR =========== */
 
 .navbar {
@@ -117,6 +123,18 @@ table {
     color: #e6e6e6;
 }
 
+/* =========== SHIFTS =========== */
+
+.shifts {
+    margin: 50px 0;
+}
+
+.shifts-content-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 /* =========== FOOTER =========== */
 
 footer {
@@ -144,3 +162,22 @@ footer {
     display: flex;
     justify-content: space-between;
 }
+
+/* =========== MISC =========== */
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #062743;
+    --bs-btn-border-color: #062743;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #04192b;
+    --bs-btn-hover-border-color: #04192b;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #04192b;
+    --bs-btn-active-border-color: #04192b;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #062743;
+    --bs-btn-disabled-border-color: #062743;
+  }
