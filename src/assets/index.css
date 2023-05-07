@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #062743;
+    --grey-text-color: #f0f0f0;
+}
+
+#root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+p,h1,h2,h3,h4,h5,h6 {
+    padding: 0;
+    margin: 0; 
+}
+
+table {
+    margin-bottom: 0 !important;
+}
+
+.card {
+    border-width: 2px;
+}
+
+.card-header {
+    background-color: var(--main-color);
+    color: var(--grey-text-color);
+}
+
+/* =========== NAVBAR =========== */
+
+.navbar {
+    padding: 15px 0;
+    background-color: var(--main-color);
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.navbar-nav {
+    gap: 15px;
+}
+
+.nav-link {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* =========== INDEX =========== */
+
+.index-page {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* =========== DASHBOARD =========== */
+
+.dashboard {
+    margin: 50px 0;
+}
+
+.dashboard-content {
+    display: flex;
+    flex-direction: column;
+}
+
+    .dashboard-content h1 {
+        font-size: 36px;
+        font-weight: 600;
+    }
+
+.dashboard-content-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard-selectors {
+    display: flex;
+    justify-content: end;
+    gap: 15px;
+}
+
+.card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 40px;
+}
+
+.card-text h3 {
+    font-size: 48px;
+}
+
+.card-text p {
+    color: #a0a0a0;
+}
+
+.card-icon {
+    font-size: 72px;
+    color: #e6e6e6;
+}
+
+/* =========== FOOTER =========== */
+
+footer {
+    margin: auto 0 0 0;
+    background-color: var(--main-color);
+    padding: 20px 0;
+}
+
+    footer p {
+        font-weight: 500;
+        color: var(--grey-text-color);
+    }
+
+    footer a {
+        font-weight: 500;
+        color: var(--grey-text-color);
+        text-decoration: none;
+    }
+
+    footer a:hover {
+        color: var(--grey-text-color);
+    }
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
